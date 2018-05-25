@@ -39,19 +39,13 @@ class Modal extends Component{
 class App extends Component {
   constructor(props){
     super(props);
-    this.state={mounted: false};
-  }
-
-  componentDidMount(){
-    this.setState({mounted: true});
+    this.state={mounted: true};
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    this.setState({mounted: false});
-    
+    this.setState({mounted: false});    
   }
-
   
   render() {
     let child;
